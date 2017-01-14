@@ -1,0 +1,21 @@
+
+<h2><%= @user.full_name %>'s Playlist</h2>
+<span class="counter pull-right"></span>
+<table class="table table-hover table-bordered results myTable">
+  <thead>
+    <tr>
+      <th class="col-md-5 col-xs-6">Artist</th>
+      <th class="col-md-5 col-xs-5">Title</th>
+      <th class="col-md-3 col-xs-3">No of times added</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <% @songs.each do |song| %>
+      <th scope="row"><%= song.artist %></th>
+      <td><a href="/songs/<%= song.id %>" class="link"><%= song.title %></a></td>
+      <td><%= song.selections.sum(:count) %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

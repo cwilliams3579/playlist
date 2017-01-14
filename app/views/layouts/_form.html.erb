@@ -1,0 +1,67 @@
+<% provide(:title, "Sign Up") %>
+<div class="container">
+  <section class="tabblue">
+    <ul class="tabs blue">
+      <li>
+        <input type="radio" name="tabs blue" id="tab1" checked="">
+        <label for="tab1">Register</label>
+        <div id="tab-content1" class="tab-content">
+          <form method="post" action="/users">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <span class="tabaddon"><i class="fa fa-user fa-2x"></i></span>
+            <input class="field" id="first_name" name="user[first_name]" type="text" placeholder="Enter first name">
+            <span class="tabaddon"><i class="fa fa-user fa-2x"></i></span>
+            <input class="field" id="first_name" name="user[last_name]" type="text" placeholder="Enter last name">
+            <span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+            <input class="field" id="email" name="user[email]"  type="email" placeholder="myusername@gmail.com">
+            <span class="tabaddon"><i class="fa fa-lock fa-2x"></i></span>
+            <input class="field" id="password" name="user[password]"  type="password" placeholder="mypassword">
+            <span class="tabaddon"><i class="fa fa-lock fa-2x"></i></span>
+            <input class="field" id="confirm_password" name="user[confirm_password]"  type="password" placeholder="Confirm your password">
+            <div class="btn">
+              <input type="checkbox" name="terms" >
+              <em>I agree with terms and conditions </em>
+              <input type="submit" value="Register">
+            </div>
+          </form>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="tabs blue" id="tab2">
+        <label for="tab2">Login</label>
+        <div id="tab-content2" class="tab-content">
+          <form method="post"  action="/login">
+            <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+            <div class="social"> <a class="facebook" href="#"><i class="fa fa-facebook fa-fw"></i> Facebook</a> <a class="twitter" href="#"><i class="fa fa-twitter fa-fw"></i> Twiter</a> </div>
+            <h4>OR</h4>
+            <span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+            <input class="field" id="email" name="login[email]"  type="email" placeholder="myusername@gmail.com">
+            <span class="tabaddon"><i class="fa fa-lock fa-2x"></i></span>
+            <input class="field" id="password" name="login[password]"  type="password" placeholder="mypassword">
+            <div class="btn">
+              <input type="checkbox" name="terms" >
+              <em>Keep me logged in </em>
+              <input type="submit" value="Log In">
+            </div>
+          </form>
+        </div>
+      </li>
+      <li>
+        <input type="radio" name="tabs blue" id="tab3" >
+        <label for="tab3">Reset Password</label>
+        <div id="tab-content3" class="tab-content">
+          <form method="post" name="register" action="">
+            <span class="tabaddon"><i class="fa fa-user fa-2x"></i></span>
+            <input class="field" type="text" placeholder="myusername">
+            <h4>OR</h4>
+            <span class="tabaddon"><i class="fa fa-envelope fa-2x"></i></span>
+            <input class="field" type="email" placeholder="myusername@gmail.com">
+            <div class="btn">
+              <input type="submit" value="Get New One !">
+            </div>
+          </form>
+        </div>
+      </li>
+    </ul>
+  </section>
+</div>

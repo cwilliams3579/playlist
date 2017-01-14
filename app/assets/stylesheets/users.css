@@ -1,0 +1,571 @@
+/* line 5, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 13, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+body {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "Raleway",Arial,sans-serif;
+  font-size: 2em;
+  font-weight: 400; }
+
+/* line 27, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+header {
+  font-family: 'Lato', Arial, sans-serif;
+  margin: 0 auto;
+  padding: 2em;
+  text-align: center;
+  color: #009ee0; }
+
+/* line 35, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+header h1 {
+  color: #009ee0;
+  font-size: 2.625em;
+  line-height: 1.3;
+  margin: 0;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+/* line 44, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+header h1 hr {
+  background: #ef0c72 none repeat scroll 0 0;
+  border: medium none;
+  color: #ef0c72;
+  height: 4px;
+  margin: 0 auto;
+  width: 38px; }
+
+/* line 52, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+header span {
+  text-transform: capitalize;
+  display: block;
+  font-size: 60%;
+  color: #000;
+  padding: 0 0 0.3em 0.1em; }
+
+/* line 62, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+small {
+  bottom: 25px;
+  color: #EF0C72;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative; }
+
+/* line 70, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.container {
+  width: 470px;
+  margin: 0 auto; }
+
+/* line 76, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+section {
+  margin: 0 auto;
+  height: 442px;
+  margin: 0 auto;
+  width: 470px;
+  margin-bottom: 40px; }
+
+/* line 84, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.democolors {
+  margin-bottom: 20px;
+  overflow: auto;
+  width: 470px; }
+
+/* line 89, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.democolors a {
+  display: inline-block;
+  float: left;
+  height: 20px;
+  margin: 0 6px 0 0;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  width: 20px; }
+
+/* line 99, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.democolors a.blue {
+  background: #6e98e3 none repeat scroll 0 0; }
+
+/* line 102, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.democolors a.red {
+  background: #bc3628 none repeat scroll 0 0; }
+
+/* line 105, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.democolors a.purple {
+  background: #6b2c85 none repeat scroll 0 0; }
+
+/* line 108, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+footer {
+  background: #fff;
+  border-top: 1px solid #EDEFF0;
+  color: #2D2B2C;
+  float: left;
+  font-family: 'Lato',Arial,sans-serif;
+  font-style: italic;
+  height: 50px;
+  line-height: 50px;
+  margin: 50px auto 0;
+  position: relative;
+  text-align: center;
+  width: 100%; }
+
+/* line 123, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+footer a {
+  color: #EF0C72;
+  text-decoration: none; }
+
+/* line 138, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer; }
+
+/* line 151, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.fa:hover {
+  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  /* IE 9 */
+  -moz-transform: scale(1.2);
+  /* Firefox */
+  -webkit-transform: scale(1.2);
+  /* Safari and Chrome */
+  -o-transform: scale(1.2);
+  /* Opera */
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s; }
+
+/* makes the font 33% larger relative to the icon container */
+/* line 167, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.fa-2x {
+  font-size: 20px;
+  line-height: 40px; }
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+readers do not read off random characters that represent icons */
+/* line 176, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.fa-envelope:before {
+  content: "\f0e0"; }
+
+/* line 179, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.fa-lock:before {
+  content: "\f023"; }
+
+/* line 182, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.fa-facebook:before {
+  content: "\f09a"; }
+
+/* line 185, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.fa-twitter:before {
+  content: "\f099"; }
+
+/* line 189, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs h1 {
+  font-size: 32px;
+  font-family: 'Roboto';
+  margin-bottom: 15px; }
+
+/* line 195, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px; }
+
+/* Each Tab CSS to make Radio button Work*/
+/* Blue Color Tab - If you want to used blue tab, just used following css*/
+/******************** START ********************/
+/* line 207, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.blue {
+  width: 470px;
+  float: left;
+  list-style: none;
+  position: relative;
+  text-align: left; }
+
+/* line 214, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.blue li {
+  float: left;
+  display: block; }
+
+/* line 218, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.blue input[type="radio"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+/* line 223, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.blue label {
+  display: block;
+  padding: 14px 31px;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* line 236, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.blue .tab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 15px;
+  position: absolute;
+  top: 53px;
+  left: 0; }
+
+/* line 248, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.blue [id^="tab"]:checked + label {
+  top: 5px;
+  padding-top: 17px; }
+
+/* line 253, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.blue [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block; }
+
+/* TAB COLOR SCHEME FOR BLUE*/
+/* line 258, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabblue .tabs label {
+  background: #16b3f5; }
+
+/* line 259, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabblue .fa:hover {
+  color: #009EE0; }
+
+/* line 260, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabblue .tabs label:hover {
+  background: #009EE0; }
+
+/* line 261, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabblue .tabs .tab-content {
+  background: #009EE0; }
+
+/* line 262, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabblue .tabs [id^="tab"]:checked + label {
+  background: #009EE0; }
+
+/* line 263, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabblue .tabs input[type="submit"] {
+  background: #0875a2; }
+
+/* line 264, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabblue .tabs input[type="submit"]:hover {
+  background: #065170; }
+
+/* line 265, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabblue .tabaddon {
+  color: #16B3F5; }
+
+/******************** END ********************/
+/* RED Color Tab - If you want to used blue tab, just used following css*/
+/******************** START ********************/
+/* line 273, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.purple {
+  width: 470px;
+  float: left;
+  list-style: none;
+  position: relative;
+  text-align: left; }
+
+/* line 281, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.purple li {
+  float: left;
+  display: block; }
+
+/* line 285, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.purple input[type="radio"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+/* line 290, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.purple label {
+  display: block;
+  padding: 14px 31px;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* line 303, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.purple .tab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 15px;
+  position: absolute;
+  top: 53px;
+  left: 0; }
+
+/* line 315, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.purple [id^="tab"]:checked + label {
+  top: 5px;
+  padding-top: 17px; }
+
+/* line 320, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.purple [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block; }
+
+/* TAB COLOR SCHEME FOR RED*/
+/* line 325, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabpurple .tabs label {
+  background: #6b2c85; }
+
+/* line 326, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabpurple .fa:hover {
+  color: #9545b7; }
+
+/* line 327, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabpurple .tabs label:hover {
+  background: #9545b7; }
+
+/* line 328, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabpurple .tabs .tab-content {
+  background: #9545b7; }
+
+/* line 329, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabpurple .tabs [id^="tab"]:checked + label {
+  background: #9545b7; }
+
+/* line 330, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabpurple .tabs input[type="submit"] {
+  background: #832da8; }
+
+/* line 331, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabpurple .tabs input[type="submit"]:hover {
+  background: #6a1290; }
+
+/* line 332, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabpurple .tabaddon {
+  color: #6b2c85; }
+
+/******************** END ********************/
+/* RED Color Tab - If you want to used blue tab, just used following css*/
+/******************** START ********************/
+/* line 341, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.red {
+  width: 470px;
+  float: left;
+  list-style: none;
+  position: relative;
+  text-align: left; }
+
+/* line 349, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.red li {
+  float: left;
+  display: block; }
+
+/* line 353, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.red input[type="radio"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
+/* line 358, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.red label {
+  display: block;
+  padding: 14px 31px;
+  font-size: 16px;
+  font-weight: normal;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+/* line 371, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.red .tab-content {
+  z-index: 2;
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  font-size: 17px;
+  line-height: 25px;
+  padding: 15px;
+  position: absolute;
+  top: 53px;
+  left: 0; }
+
+/* line 383, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.red [id^="tab"]:checked + label {
+  top: 5px;
+  padding-top: 17px; }
+
+/* line 388, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs.red [id^="tab"]:checked ~ [id^="tab-content"] {
+  display: block; }
+
+/* TAB COLOR SCHEME FOR RED*/
+/* line 393, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabred .tabs label {
+  background: #bc3628; }
+
+/* line 394, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabred .fa:hover {
+  color: #ea5343; }
+
+/* line 395, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabred .tabs label:hover {
+  background: #ea5343; }
+
+/* line 396, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabred .tabs .tab-content {
+  background: #ea5343; }
+
+/* line 397, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabred .tabs [id^="tab"]:checked + label {
+  background: #ea5343; }
+
+/* line 398, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabred .tabs input[type="submit"] {
+  background: #c03325; }
+
+/* line 399, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabred .tabs input[type="submit"]:hover {
+  background: #ad2618; }
+
+/* line 400, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabred .tabaddon {
+  color: #ea5343; }
+
+/******************** END ********************/
+/* TAB Form */
+/* line 410, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs input[type="text"], .tabs input[type="password"], .tabs input[type="email"], .tabs select {
+  border: medium none;
+  color: #757575;
+  height: 40px;
+  line-height: 40px;
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 89%; }
+
+/* line 419, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs select {
+  width: 48%;
+  float: left;
+  margin-right: 4%; }
+
+/* line 424, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs select.last {
+  margin-right: 0px; }
+
+/* line 428, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs .btn {
+  float: left;
+  margin-top: 15px;
+  width: 100%; }
+
+/* line 433, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs .btn em {
+  font-size: 12px; }
+
+/* line 439, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs input[type="submit"] {
+  display: block;
+  border: none;
+  float: right;
+  color: #FFFFFF;
+  padding: 10px 12px;
+  cursor: pointer;
+  text-decoration: none; }
+
+/* line 448, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs input[type="submit"]:hover {
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s; }
+
+/* line 455, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs h4 {
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: normal; }
+
+/* line 465, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabaddon {
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-right: 1px solid #ebebeb;
+  float: left;
+  height: 40px;
+  text-align: center;
+  width: 40px; }
+
+/* line 474, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs .social {
+  width: 100%;
+  float: left;
+  margin-bottom: 10px; }
+
+/* line 479, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs .social a {
+  color: #fff;
+  float: left;
+  font-size: 14px;
+  padding: 10px 30px;
+  text-decoration: none;
+  width: 50%; }
+
+/* line 487, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs .social .fa {
+  margin-right: 25px; }
+
+/* line 491, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs .social .facebook {
+  background: none repeat scroll 0 0 #3B5998; }
+
+/* line 494, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs .social .facebook:hover {
+  background: #3e5fa4;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s; }
+
+/* line 502, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs .social .twitter {
+  background: none repeat scroll 0 0 #16B3F5; }
+
+/* line 505, /home/ninja/Desktop/playlist/app/assets/stylesheets/users.scss */
+.tabs .social .twitter:hover {
+  background: #34bbf4;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  transition: 0.5s; }
+
+/*# sourceMappingURL=users.css.map */

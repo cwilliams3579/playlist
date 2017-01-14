@@ -12,6 +12,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+gem 'bcrypt'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
@@ -22,16 +23,22 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'bootstrap', '~> 4.0.0.alpha3.1'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+gem 'font-awesome-sass'
+gem 'jquery-datatables-rails', github: 'rweng/jquery-datatables-rails'
 gem 'high_voltage'
 group :development do
   gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'hub', :require=>nil
   gem 'rails_layout'
 end
 group :development, :test do
   gem 'sqlite3'
+  gem 'hirb'
+  gem 'faker'
 end
 group :production do
+  gem 'rails_12factor'
   gem 'pg'
 end

@@ -1,0 +1,111 @@
+// Place all the styles related to the Songs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.dataTables_wrapper .dataTables_filter input {
+//  margin-left: 0.5em;
+  display: block;
+  width: 110%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+//  line-height: 1.42857143;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+}
+
+.dataTables_wrapper .dataTables_filter {
+  float: right;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.btn-lg {
+  float: right;
+  color: white;
+}
+.link {
+  color: #337ab7;
+  text-decoration: none;
+}
+.dashboard a{
+  color: white;
+  text-decoration: none;
+}
+
+//body{
+//  background:url('http://www.wallpaperup.com/uploads/wallpapers/2012/10/21/20181/cad2441dd3252cf53f12154412286ba0.jpg');
+//  padding:50px;
+//}
+
+#login-dp{
+  min-width: 250px;
+  padding: 14px 14px 0;
+  overflow:hidden;
+  background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+  font-size:12px    
+}
+#login-dp .bottom{
+  background-color:rgba(255,255,255,.8);
+  border-top:1px solid #ddd;
+  clear:both;
+  padding:14px;
+}
+#login-dp .social-buttons{
+  margin:12px 0    
+}
+#login-dp .social-buttons a{
+  width: 49%;
+}
+#login-dp .form-group {
+  margin-bottom: 10px;
+}
+.btn-fb{
+  color: #fff;
+  background-color:#3b5998;
+}
+.btn-fb:hover{
+  color: #fff;
+  background-color:#496ebc 
+}
+.btn-tw{
+  color: #fff;
+  background-color:#55acee;
+}
+.btn-tw:hover{
+  color: #fff;
+  background-color:#59b5fa;
+}
+@media(max-width:768px){
+  #login-dp{
+    background-color: inherit;
+    color: #fff;
+  }
+  #login-dp .bottom{
+    background-color: inherit;
+    border-top:0 none;
+  }
+}
+
+.fa.fa-music {
+  background: #fff;
+  color: #337AB7;
+  padding: 12px;
+  font-size: larger;
+}
+.fa-user {
+  letter-spacing: 15px;
+  color: #337AB7;
+}
+

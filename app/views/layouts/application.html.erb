@@ -9,9 +9,9 @@
     <%= csrf_meta_tags %>
   </head>
   <body>
-    <header>
+    <% if session[:user_id] %>
       <%= render 'layouts/navigation' %>
-    </header>
+    <% end %>
     <main role="main">
        <%= render 'layouts/messages' %>
        <%= yield %>
