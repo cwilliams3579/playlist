@@ -21,8 +21,14 @@ body {
   font-weight: 400;
 }
 
+span li{
+    padding-right: 20px;
+    line-height: 2;
+}
 
-
+h2 {
+  margin-bottom: 40px;
+}
 
 header {
   font-family: 'Lato', Arial, sans-serif;
@@ -172,7 +178,7 @@ footer a{
 
 /* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
 readers do not read off random characters that represent icons */
-  
+
 .fa-envelope:before {
   content: "\f0e0";
 }
@@ -191,7 +197,7 @@ readers do not read off random characters that represent icons */
   font-family: 'Roboto';
   margin-bottom:15px;
 
-}	
+}
 .tabs p {
   font-size: 14px;
   line-height: 20px;
@@ -417,7 +423,7 @@ readers do not read off random characters that represent icons */
   width: 89%;
 }
 .tabs select {
-  width: 48%;	
+  width: 48%;
   float:left;
   margin-right:4%;
 }
@@ -456,7 +462,7 @@ readers do not read off random characters that represent icons */
   font-style:italic;
   text-align:center;
   margin-bottom:10px;
-  font-weight:normal;	
+  font-weight:normal;
 }
 
 
@@ -489,7 +495,7 @@ readers do not read off random characters that represent icons */
 }
 
 .tabs .social .facebook{
-  background: none repeat scroll 0 0 #3B5998;	
+  background: none repeat scroll 0 0 #3B5998;
 }
 .tabs .social .facebook:hover{
   background:#3e5fa4;

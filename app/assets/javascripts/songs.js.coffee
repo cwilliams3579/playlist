@@ -3,5 +3,3 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 jquery ->
   $('.myTable').dataTable
-#  sPaginationType: "full_numbers"
-  "paging": false

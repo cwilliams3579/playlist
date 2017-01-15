@@ -1,15 +1,18 @@
 class SongsController < ApplicationController
+  expose :songs, ->{ Song.all }
+  expose :song
+
   def index
-    @songs = Song.all
+    # songs = Song.all
   end
-  
+
   def new
-    @song = Song.new
+    # song = Song.new
   end
 
   def create
-    @song = Song.new(song_params)
-    if @song.save
+    song = Song.new(song_params)
+    if song.save
       redirect_to '/songs'
     else
       flash[:danger] = "Oops something went wrong"
@@ -18,13 +21,13 @@ class SongsController < ApplicationController
   end
 
   def show
-    @song = Song.find(params[:id])
-    @songs = Song.all
-    @users = User.all
+    # song = Song.find(params[:id])
+    # songs = Song.all
+    # users = User.all
   end
 
   private
   def song_params
-    params.require(:song).permit(:artist, :title)
+    params.require(:song).permit(:artist, :title, :full_name)
   end
 end

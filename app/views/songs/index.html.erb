@@ -1,10 +1,9 @@
 
-<h2>Hello, <%= current_user.full_name %>!</h2>
-<% if @songs.empty? %>
+<h4>All the songs in our hub</h4>
+<% if songs.empty? %>
 <h4>Oh no, no one has added any songs yet! Be the first to add a song below.</h4>
 <% else %>
 <!--<span class="counter pull-right"></span>-->
-<h4>All the songs in our hub</h4>
 <table class="table table-hover table-bordered results myTable">
   <thead>
     <tr>
@@ -13,13 +12,13 @@
       <th class="col-md-3 col-xs-3">No of times added</th>
       <th class="col-md-5 col-xs-5">Add to Playlist</th>
     </tr>
-
   </thead>
   <tbody>
     <tr>
-      <% @songs.each do |song| %>
+      <% songs.each do |song| %>
       <th scope="row">
-        <i class="fa fa-user" aria-hidden="true"></i>
+        <i class="fa fa-user" aria-hidden="true"
+        style="font-size: 30px; margin-top: 5;";></i>
         <%= song.artist %>
       </th>
       <td>
@@ -29,10 +28,11 @@
       <td>
         <%= song.selections.sum(:count) %>
       </td>
-      <td><%#= link_to 'Add' 'javascript:sweetAlert("Added to your hub successfully")', class: "btn btn-success" %>
+      <td>
         <form action="/selections/<%= song.id %>" method="post">
-          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" <%= 'javascript:sweetAlert("Added to your hub successfully")'%> />
-          <input type="submit" value="Add" class="btn btn-success" />
+          <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
+          <%#= link_to 'Add' :method => :put, 'javascript:sweetAlert("Added to your hub successfully")', :class => "btn btn-success" %>
+          <input type="submit" value="Add" class="btn btn-success btn-block" name='javascript:sweetAlert("Added to your hub successfully")'/>
         </form>
       </td>
     </tr>
@@ -41,7 +41,7 @@
 </table>
 <% end %>
 <div class="text-center">
-  <h3><i class="fa fa-music" aria-hidden="true"></i></h3>
+  <h3>Add a Song <i class="fa fa-music" aria-hidden="true"></i></h3>
   <form action="/songs" method="post" class="form-group">
     <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>" />
     <label for="Artist">Artist
@@ -53,4 +53,3 @@
     <input type="submit" value="Add Song" class="btn btn-primary" />
   </form>
 </div>
-

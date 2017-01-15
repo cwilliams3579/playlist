@@ -1,8 +1,8 @@
 
-<% if @song.selections.empty? %>
-<h4><%= @song.title %> hasn't been added to any playlists yet!</h4>
+<% if song.selections.empty? %>
+<h4><%= song.title %> hasn't been added to any playlists yet!</h4>
 <% else %>
-<h3>Users who added <%= @song.artist %> - <%= @song.title %></h3>
+<h3>Users who added <%= song.artist %> - <%= song.title %></h3>
 <table class="table table-hover table-bordered results myTable">
   <thead>
     <tr>
@@ -11,12 +11,12 @@
     </tr>
   </thead>
   <tbody>
-    <% @songs.each do |selections| %>
-        <tr> 
-          <td><a href="/songs/<%#= user_url.full_name %>" class="link"></a></td>
-          <td><%= @song.selections.sum(:count) %></td>
+    <% songs.each do |selection| %>
+        <tr>
+          <td><a href="/users/<%= selection.id %>"></a></td>
+          <td><%= selection.users.sum(:count) %></td>
         </tr>
-    </tbody>
     <% end %>
+    </tbody>
 </table>
 <% end %>
